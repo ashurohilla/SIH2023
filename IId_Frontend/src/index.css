@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.Hero {
+  flex-grow: 1;
+  background: url(./assets/bannerimage.jpg);
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-color: #000000bd;
+  background-blend-mode: hue;
+  color: #fff;
+}
+
+.Hero h1 {
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+.Hero h2 {
+  font-size: 4rem;
+  font-weight: 500;
+}
+/* src/index.css */
+body {
+  background-color: #054871; /* Set your darkblue color here */
+}
+.shifted {
+  transform: translateY(-80px); /* Adjust the value as needed */
+}
+
+.close-icon-button {
+  position: absolute;
+  top: 10px; /* Adjust the value as needed */
+  right: 10px; /* Adjust the value as needed */
+  z-index: 100; /* Ensure it's above other content in the popup */
+}
+/* Define a class for your footer container */
+.footer-container {
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Adjust the z-index to ensure the footer appears above other content */
+.footer-content {
+  z-index: 1;
+  /* Add any other styles you need for your footer content */
+}
+/* Main CSS file or inline styles */
+.page-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-container {
+  flex-grow: 1;
+}
+
+/* Footer styles */
+/* .footer-container {
+  flex-shrink: 0;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
+} */
