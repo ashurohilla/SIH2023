@@ -4,7 +4,7 @@ import { RiMoonFill, RiSunFill } from "react-icons/ri";
 import { useNavigate } from "react-router-dom";
 import DashApi from "../../dashboardapis/api";
 import { IMAGE_API } from "../../config/constant";
-import Logo from '../../assets/Logo.jpg';
+import Logo from '../../assets/Logo.png';
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -99,7 +99,7 @@ const Navbar = () => {
           <img
           src={Logo} // Replace with the actual URL of your logo image
           alt="Logo"
-          className="h-15 w-40 inline-block ml-10"
+          className="h-14 w-14 inline-block ml-10"
         />
          
           <Link

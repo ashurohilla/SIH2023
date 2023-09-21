@@ -37,6 +37,15 @@ class DashApi {
     });
   };
 
+  static Medicines = () => {
+    const token = localStorage.getItem("token");
+    return axios.get(`${base2}/medicines`,{
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    });
+  };
+
 
 
 }
